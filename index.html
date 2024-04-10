@@ -67,7 +67,7 @@
     <header
       x-data="{ menuQuest: false, menuRayBan: false, menuAsistencia: false }"
     >
-      <div class="py-4">
+      <div class="py-4 border border-red-600">
         <div
           class="flex justify-between items-center mx-auto max-w-7xl text-sm"
         >
@@ -208,7 +208,10 @@
       <!-- Menus -->
       <!-- Meta Quest menu -->
       <!-- TODO: Animate when is shown -->
-      <div x-show="menuQuest" class="py-16 border-t border-gray-200">
+      <div
+        class="overflow-hidden py-0 h-0 border-gray-200 transition-all duration-1000 border-y"
+        :class="{'h-auto py-16': menuQuest}"
+      >
         <div class="flex gap-16 mx-auto max-w-5xl text-xl">
           <div class="w-60">
             <ul class="space-y-4">
