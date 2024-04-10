@@ -67,7 +67,7 @@
     <header
       x-data="{ menuQuest: false, menuRayBan: false, menuAsistencia: false }"
     >
-      <div class="py-4 border border-red-600">
+      <div class="py-4">
         <div
           class="flex justify-between items-center mx-auto max-w-7xl text-sm"
         >
@@ -209,10 +209,10 @@
       <!-- Meta Quest menu -->
       <!-- TODO: Animate when is shown -->
       <div
-        class="overflow-hidden py-0 h-0 border-gray-200 transition-all duration-1000 border-y"
-        :class="{'h-auto py-16': menuQuest}"
+        class="border-gray-200 transition-[grid-template-rows] duration-500 border-y grid grid-rows-[0fr] ease-out"
+        :class="{'grid-rows-[1fr] py-16': menuQuest}"
       >
-        <div class="flex gap-16 mx-auto max-w-5xl text-xl">
+        <div class="flex overflow-y-hidden gap-16 mx-auto max-w-5xl text-xl">
           <div class="w-60">
             <ul class="space-y-4">
               <li
