@@ -208,8 +208,8 @@
       <!-- Menus -->
       <!-- Meta Quest menu -->
       <div
-        class="border-gray-200 transition-[grid-template-rows] duration-500 border-y grid grid-rows-[0fr] ease-out"
-        :class="{'grid-rows-[1fr] py-16': menuQuest}"
+        class="border-gray-200 transition-[grid-template-rows] border-t grid grid-rows-[0fr] ease-in"
+        :class="{'grid-rows-[1fr] py-16 duration-500': menuQuest}"
       >
         <div
           class="flex overflow-y-hidden gap-16 mx-auto w-full max-w-5xl text-xl"
@@ -285,9 +285,11 @@
       </div>
       <!-- End of Meta Quest menu -->
       <!-- Rayban menu -->
-      <!-- TODO: Animate when is shown -->
-      <div x-show="menuRayBan" class="py-16 border-t border-gray-200">
-        <div class="mx-auto max-w-5xl text-xl">
+      <div
+        class="border-t border-gray-200 transition-[grid-template-rows] grid grid-rows-[0fr] ease-in"
+        :class="{'grid-rows-[1fr] py-16 duration-500': menuRayBan}"
+      >
+        <div class="overflow-y-hidden mx-auto w-full max-w-5xl text-xl">
           <ul class="space-y-4">
             <li
               class="hover:underline hover:underline-offset-4 hover:decoration-1"
