@@ -208,8 +208,8 @@
       <!-- Menus -->
       <!-- Meta Quest menu -->
       <div
-        class="border-gray-200 transition-[grid-template-rows] border-t grid grid-rows-[0fr] ease-in"
-        :class="{'grid-rows-[1fr] py-16 duration-500': menuQuest}"
+        class="border-gray-200 transition-[grid-template-rows] grid grid-rows-[0fr] ease-in"
+        :class="{'border-t grid-rows-[1fr] py-16 duration-500': menuQuest}"
       >
         <div
           class="flex overflow-y-hidden gap-16 mx-auto w-full max-w-5xl text-xl"
@@ -286,8 +286,8 @@
       <!-- End of Meta Quest menu -->
       <!-- Rayban menu -->
       <div
-        class="border-t border-gray-200 transition-[grid-template-rows] grid grid-rows-[0fr] ease-in"
-        :class="{'grid-rows-[1fr] py-16 duration-500': menuRayBan}"
+        class="border-gray-200 transition-[grid-template-rows] grid grid-rows-[0fr] ease-in"
+        :class="{'grid-rows-[1fr] py-16 duration-500 border-t': menuRayBan}"
       >
         <div class="overflow-y-hidden mx-auto w-full max-w-5xl text-xl">
           <ul class="space-y-4">
@@ -316,9 +316,13 @@
       </div>
       <!-- End of Rayban menu -->
       <!-- Asistencia menu -->
-      <!-- TODO: Animate when is shown -->
-      <div x-show="menuAsistencia" class="py-16 border-t border-gray-200">
-        <div class="flex gap-16 justify-end mx-auto max-w-5xl text-xl">
+      <div
+        class="border-gray-200 transition-[grid-template-rows] grid grid-rows-[0fr] ease-in"
+        :class="{'grid-rows-[1fr] py-16 duration-500 border-t': menuAsistencia}"
+      >
+        <div
+          class="flex overflow-y-hidden gap-16 justify-end mx-auto w-full max-w-5xl text-xl"
+        >
           <div class="w-60">
             <ul class="space-y-4">
               <li class="text-base font-bold text-gray-500">
