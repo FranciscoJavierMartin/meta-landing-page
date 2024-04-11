@@ -2,7 +2,19 @@
 export default {
   content: ['./index.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        meta: {
+          lighter: '#3e76b3',
+          light: '#3d7cce',
+          DEFAULT: '#1d65c1',
+          dark: '#418af7',
+        },
+        secondary: {
+          DEFAULT: '#344854',
+        },
+      },
+    },
   },
   plugins: [],
 };
