@@ -15,6 +15,10 @@ export default {
         },
       },
     },
+    fontFamily: {
+      heading: ['Montserrat', 'sans-serif'],
+      text: ['Roboto', 'sans-serif'],
+    },
   },
   plugins: [],
 };
