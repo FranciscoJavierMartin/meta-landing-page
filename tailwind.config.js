@@ -14,6 +14,9 @@ export default {
           DEFAULT: '#344854',
         },
       },
+      maxWidth: {
+        '8xl': '94rem',
+      },
     },
     fontFamily: {
       heading: ['Montserrat', 'sans-serif'],
